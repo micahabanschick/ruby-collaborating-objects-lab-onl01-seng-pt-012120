@@ -47,9 +47,7 @@ class Artist
   end
   
   def print_songs
-    arr []
-    Song.all.each{|song| arr << song if song.artist.name == @name}
-    arr
+    @songs
   end 
   #binding.pry
 end 
