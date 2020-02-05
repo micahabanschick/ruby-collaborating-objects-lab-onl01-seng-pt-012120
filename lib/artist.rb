@@ -25,11 +25,7 @@ class Artist
   end 
   
   def songs 
-    arr = []
-    Song.all.each do |song|
-      arr << song if song.artist.name == @name 
-    end
-    arr
+    @songs
   end 
   
   def self.find_or_create_by_name(name)
