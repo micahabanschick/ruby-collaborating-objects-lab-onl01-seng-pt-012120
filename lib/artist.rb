@@ -47,7 +47,7 @@ class Artist
   end
   
   def print_songs
-    @songs
+    @songs.map{|song| puts song}
   end 
   #binding.pry
 end 
